@@ -10,11 +10,15 @@ range(3, 4); // [3]
 range(7, 6); // []
 ***********************************************************************/
 
-
 function range(start, end) {
-  // Your code here 
-}
+  if (end <= start) {
+    return [];
+  }
+  let result = range(start + 1, end);
 
+ result.unshift(start);
+  return result;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
