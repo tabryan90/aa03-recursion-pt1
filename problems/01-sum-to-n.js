@@ -12,8 +12,13 @@ sumToN(-8)  // returns null
 ***********************************************************************/
 
 
-function sumToN(n) {
-
+function sumToN(number) {
+  let counter = number;
+   if(number > 0){
+    counter--;
+    number += number;
+    sumToN (counter)
+   }
 }
 
 
