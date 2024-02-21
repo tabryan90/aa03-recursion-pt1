@@ -13,12 +13,11 @@ sumToN(-8)  // returns null
 
 
 function sumToN(number) {
-if( number < 0){
-  return null;
-
-}else{
-  return number + sumToN( number - 1);
-}
+  if ( number < 0 ) {
+    return null;
+  } else {
+    return number + sumToN(number - 1);
+  }
 }
 
 

@@ -11,14 +11,9 @@ range(7, 6); // []
 ***********************************************************************/
 
 function range(start, end) {
-  if (end <= start) {
-    return [];
-  }
-  let result = range(start + 1, end);
-
- result.unshift(start);
-  return result;
+  // Your code here
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
