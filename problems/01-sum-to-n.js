@@ -5,20 +5,19 @@ number below 0.
 
 Examples:
 
-sumToN(5) // returns 15
+sumToN(5) // returns 15; 5 + 4 + 3 + 2 + 1 = 15
 sumToN(1)  // returns 1
-sumToN(9)  // returns 45
+sumToN(9)  // returns 45; 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45
 sumToN(-8)  // returns null
 ***********************************************************************/
 
 
 function sumToN(number) {
-  let counter = number;
-   if(number > 0){
-    counter--;
-    number += number;
-    sumToN (counter)
-   }
+  if ( number < 0 ) {
+    return null;
+  } else {
+    return number + sumToN(number - 1);
+  }
 }
 
 
