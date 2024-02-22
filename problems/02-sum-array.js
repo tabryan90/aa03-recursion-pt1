@@ -11,9 +11,14 @@ sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
 function sumArray(arr) {
-  let arrLength = arr.length();
-  return arr[arrLength ] + sumArray(arr[(arrLength )-1]);
+  if (arr.length === 0) return 0;
+
+  let sum = arr.pop();
+
+  return sum + sumArray(arr);
+
 }
+
 console.log(sumArray([1, 2, 3])); //  6
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
