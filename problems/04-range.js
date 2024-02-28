@@ -10,24 +10,14 @@ range(3, 4); // [3]
 range(7, 6); // []
 ***********************************************************************/
 
-function range(start, end) {
- // if (start > end) return [];
 
-  // let arr = [start];
-  // start++;
-  // if (start === end){
-  //   return arr;
-  // }
 
-  // arr.push(...range(start, end));
-  // return arr;
+console.log(range(1, 5)); // [1, 2, 3, 4]
+console.log(range(3, 4)); // [3]
+console.log(range(7, 6)); // []
 
-  if (start >= end ) return []
-  return [start, ...range(start + 1, end)]
 
-}
 
-console.log(range(1, 5));
 
 
 
